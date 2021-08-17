@@ -1,7 +1,7 @@
 const path = require("path")
 require("dotenv").config();
 
-const Env = process.env.NODE_ENV;
+const Env = process.env.NODE_ENV ?? 'development';
 
 module.exports = {
     entry: "./src/index.ts",
